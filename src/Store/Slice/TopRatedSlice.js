@@ -1,8 +1,8 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-export const TopRatedMovieInfo = createAsyncThunk("moviedata", async (data) => {
+export const TopRatedMovieInfo = createAsyncThunk("topratedmoviedata", async (data) => {
   return fetch(
-   `https://api.themoviedb.org/3/search/movie?api_key=&language=en-US&query=horror&page=1&include_adult=false`,
+   `https://api.themoviedb.org/3/movie/${data}`,
     {
       method: "GET",
       headers: {},
@@ -10,7 +10,7 @@ export const TopRatedMovieInfo = createAsyncThunk("moviedata", async (data) => {
   ).then((response) => response.json());
 });
 const TopRatedMovie = createSlice({
-  name: "MoveiInfo",
+  name: "topratedmoviedata",
   initialState: {
     TopMoviedata: [],
     TopmovieLoading: true,
