@@ -10,6 +10,6 @@ root.render(
   <Provider store={Store}>
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>tele
   </Provider>
 );
