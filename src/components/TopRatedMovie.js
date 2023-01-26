@@ -1,29 +1,19 @@
-import React, { useEffect,useState } from "react";
-import { MoviedbInfo } from "../Store/Slice/TrendingSlice";
+import React, { useEffect } from "react";
 import {TopRatedMovieInfo} from "../Store/Slice/TopRatedSlice";
 import { useDispatch, useSelector } from "react-redux";
-import TopRatedMovie from "../components/TopRatedMovie";
-const MainPage = () => {
-  const dispatch = useDispatch();
-  
-
-  useEffect(() => {
-    dispatch(MoviedbInfo());
-    
-  }, []);
-  const { MovieData, Loading } = useSelector((store) => store.movieinfo);
-
-  
-  // console.log(MovieData?.results[0])
-  // console.log("sxdcfgvbhnjkmjhbgvcfdxcfgvbhnj", {TopMoviedata})
-  console.log(Loading);
+const TopRatedMovie = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+       dispatch(TopRatedMovieInfo());
+    }, []);
+    const { TopMoviedata, TopmovieLoading } = useSelector((store) => store.TopMovieinfo);
   return (
-    <>
-    <p>Trending</p>
+    <div>
+         <p>Top movies</p>
       <div className="flex items-center group">
         <div className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative">
-          {Loading == false &&
-            MovieData?.results.map((obj) => (
+          {TopmovieLoading == false &&
+            TopMoviedata?.results.map((obj) => (
               <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
                 <img
                   className="w-full h-auto block"
@@ -39,9 +29,8 @@ const MainPage = () => {
             ))}
         </div>
       </div>
-     <TopRatedMovie/>
-    </>
-  );
-};
+    </div>
+  )
+}
 
-export default MainPage;
+export default TopRatedMovie
