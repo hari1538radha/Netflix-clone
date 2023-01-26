@@ -7,7 +7,7 @@ const Header = () => {
     <div className="Maincontainer">
       <div className="subcontainer">
         <img src="https://i.ibb.co/r5krrdz/logo.png" alt="logoimg"></img>
-        <Link to={"/"}>Sign in</Link>
+        <Link to={"/Mainpage"}>Sign in</Link>
       </div>
       <div className="mainbodycontainer">
         <h1>Unlimited Movies, TV shows and more</h1>
