@@ -1,17 +1,14 @@
-import React,{useState,useEffect} from 'react'
- import Tabs from "../tabs/tab"
-import TabLABELS from "../tabs/constant"
-import styles from "./tabs.css"
+import React, { useState, useEffect } from "react";
+import Tabs from "../tabs/tab";
+import TabLABELS from "../tabs/constant";
+import styles from "./tabs.css";
 
 const TabContent = () => {
-
-    return (
+  return (
     <div>
-
-<Tabs/>
- 
+      <Tabs />
     </div>
-  )
-}
+  );
+};
 
-export default TabContent
+export default TabContent;
