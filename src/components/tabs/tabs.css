@@ -1,141 +1,130 @@
- #tab-2, #tab-3, #tab-1
-{
+#tab-2,
+#tab-3,
+#tab-1 {
+  color: rgb(59, 58, 58);
+  justify-content: center;
+  align-items: center;
+  font: 10px;
+}
 
-    color:rgb(59, 58, 58);
-    justify-content:center ;
-    align-items:center;
-    font:10px;
-} 
-
- #tab-1, #tab-2, p{
-    font-size: 10px
+#tab-1,
+#tab-2,
+p {
+  font-size: 10px;
 }
 #tab-3 {
-    font-size: 10px
+  font-size: 10px;
 }
-.total-tabs 
-
-{
-    background: #141414;
-    padding-top: 1rem;
-    border-bottom: 3px solid #fbf1f1;
-    border-right: none;
+.total-tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #fbf1f1;
+  border-right: none;
 }
-.total-tabs .tabs1
-{  
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px 0;
+.total-tabs .tabs1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
 }
-.total-tabs .tabs1 :hover
-{
-    color: #fff;
-    cursor: pointer;
-
+.total-tabs .tabs1 :hover {
+  color: #fff;
+  cursor: pointer;
 }
 .tab-border {
-    border-bottom: #e50914 4px solid;
+  border-bottom: #e50914 4px solid;
 }
 
+.tabs {
+  background: #141414;
+  padding-top: 1rem;
+  border-bottom: 3px solid #3d3d3d;
+  border-right: none;
+}
 
+.tabs .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 10px;
+}
 
+.tabs p {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
 
+.tabs .container > div {
+  padding: 1.5rem 0;
+}
 
-
-
-
-  .tabs {
-    background: #141414;
-    padding-top: 1rem;
-    border-bottom: 3px solid #3d3d3d;
-    border-right: none;
-  }
-  
-  .tabs .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    align-items: center;
-    justify-content:space-evenly;
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .tabs p {
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
-  }
-  
-  .tabs .container > div {
-    padding: 1.5rem 0;
-  }
-  
-  .tabs .container > div:hover {
-    color: rgb(192, 180, 180);
-    cursor: pointer;
-  }
-  #tab1content
-  {
-    background:black;
-    color: white;
-  }
-  .table {  
-    width: 100%;  
-    margin-top: 2rem;  
-    border-collapse: collapse;  
-    border-spacing: 0;  
-}  
-.table thead th {  
-    text-transform: uppercase;  
-    padding: 0.8rem;  
-}  
-.table tbody {  
-    display: table-row-group;  
-    vertical-align: middle;  
-    border-color: inherit;  
-}  
-.table tbody tr td {  
-    color: #999;  
-    padding: 0.8rem 1.2rem;  
-    text-align: center;  
-}  
-.table tbody tr td:first-child {  
-    text-align: left;  
-}  
-.table tbody tr:nth-child(odd) {  
-    background: #222;  
-}  
-.footer {  
-    max-width: 70%;  
-    margin: 1rem auto;  
-    overflow: auto;  
-}  
-.footer,  
-.footer a {  
-    color: #999;  
-    font-size: 0.9rem;  
-}  
-.footer p {  
-    margin-bottom: 1.5rem;  
-}  
-.footer .footer-cols {  
-    display: grid;  
-    grid-template-columns: repeat(4, 1fr);  
-    grid-gap: 2rem;  
-}  
-.footer li {  
-    line-height: 1.9;  
-}  
-.footer .lang-select {  
-    margin-top: 2rem;  
-    color: #999;  
-    background-color: #000;  
-    background-image: none;  
-    border: 1px solid rgb(246, 172, 172);  
-    padding: 1rem 1.2rem;  
-    border-radius: 5px;  
-}  
+.tabs .container > div:hover {
+  color: rgb(192, 180, 180);
+  cursor: pointer;
+}
+#tab1content {
+  background: black;
+  color: white;
+}
+.table {
+  width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.table thead th {
+  text-transform: uppercase;
+  padding: 0.8rem;
+}
+.table tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+.table tbody tr td {
+  color: #999;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+}
+.table tbody tr td:first-child {
+  text-align: left;
+}
+.table tbody tr:nth-child(odd) {
+  background: #222;
+}
+.footer {
+  max-width: 70%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+.footer p {
+  margin-bottom: 1.5rem;
+}
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+.footer li {
+  line-height: 1.9;
+}
+.footer .lang-select {
+  margin-top: 2rem;
+  color: #999;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid rgb(246, 172, 172);
+  padding: 1rem 1.2rem;
+  border-radius: 5px;
+}
