@@ -7,7 +7,7 @@ const FrontPoster = () => {
   useEffect(() => {
     dispatch(
       NetflixOriginalInfo(
-        "discover/tv?api_key=&with_networks=213"
+        `discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
       )
     );
   }, []);

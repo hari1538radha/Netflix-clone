@@ -9,22 +9,22 @@ const TopRatedMovie = () => {
   useEffect(() => {
     dispatch(
       TopRatedMovieInfo(
-        "top_rated?api_key=&language=en-US&page=5"
+        `top_rated?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=5`
       )
     );
     dispatch(
       upcominginfo(
-        "upcoming?api_key=&language=en-US&page=1"
+        `upcoming?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&page=1`
       )
     );
     dispatch(
       HorrorMovieInfo(
-        "search/movie?api_key=&language=en-US&query=horror&page=2&include_adult=false"
+        `search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=horror&page=2&include_adult=false`
       )
     );
     dispatch(
       NetflixOriginalInfo(
-        "discover/tv?api_key=&with_networks=213"
+        `discover/tv?api_key=${process.env.REACT_APP_API_KEY}&with_networks=213`
       )
     );
   }, []);
